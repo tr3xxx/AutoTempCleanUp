@@ -1,32 +1,59 @@
-# Prerequisites
-*.d
-
 # Compiled Object files
-*.slo
-*.lo
-*.o
+*.suo
 *.obj
-
-# Precompiled Headers
-*.gch
+*.o
 *.pch
+*.pdb
+*.idb
+*.ipdb
 
 # Compiled Dynamic libraries
+*.dll
 *.so
 *.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
 
 # Compiled Static libraries
-*.lai
-*.la
-*.a
 *.lib
+*.a
 
 # Executables
 *.exe
 *.out
 *.app
+
+# Build folders
+Debug/
+Release/
+ipch/
+*.aps
+*.ilk
+*.ncb
+*.opensdf
+*.sdf
+*.sln.cache
+*.suo
+*.tlog
+*.vcxproj.filters
+*.vcxproj.user
+*.vspscc
+
+# Visual Studio cache files
+*.suo
+*.sdf
+*.opensdf
+*.user
+
+# Compiled Binary files
+*.bin
+*.dat
+*.out
+*.o
+
+# Other
+.vscode/
+.idea/
+*.sln.docstates
+*.sln.ide-shutdown
+*.suo
+*.VC.db
+*.VC.VC.opendb
