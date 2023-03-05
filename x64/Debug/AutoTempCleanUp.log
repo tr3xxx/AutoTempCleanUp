@@ -1,0 +1,7 @@
+﻿  AutoTempCleanUp.cpp
+D:\Projekts\AutoTempCleanUp\AutoTempCleanUp.cpp(81,57): warning C4302: "Typumwandlung": Verkürzung von "LPWSTR" in "WORD"
+D:\Projekts\AutoTempCleanUp\AutoTempCleanUp.cpp(124,31): warning C4474: "printf": zu viele Argumente für Formatzeichenfolge übergeben
+D:\Projekts\AutoTempCleanUp\AutoTempCleanUp.cpp(124,31): message : Platzhalter und deren Parameter erwarten 0 variadic-Argumente, es wurden aber 1 variadic-Argumente bereitgestellt.
+D:\Projekts\AutoTempCleanUp\AutoTempCleanUp.cpp(125,31): warning C4474: "printf": zu viele Argumente für Formatzeichenfolge übergeben
+D:\Projekts\AutoTempCleanUp\AutoTempCleanUp.cpp(125,31): message : Platzhalter und deren Parameter erwarten 0 variadic-Argumente, es wurden aber 1 variadic-Argumente bereitgestellt.
+  AutoTempCleanUp.vcxproj -> D:\Projekts\AutoTempCleanUp\x64\Debug\AutoTempCleanUp.exe
