@@ -60,8 +60,17 @@ void CleanUp() {
 * @param hwnd the handle to the window that will be associated with the context menu
 **/
 void openPopUp(HWND hwnd) {
+    
     // Create a new popup menu
     HMENU hMenu = CreatePopupMenu();
+
+    // Add the "CleanUp Now" menu item
+    wstring title = L"AutoTempCleanUp";
+    AppendMenu(hMenu, MF_GRAYED, ID_CLEANUP, title.c_str());
+    
+    // Add a separator between the "Title" and "CleanUp" menu items
+    wstring separator1 = L"-------------";
+    AppendMenu(hMenu, MF_SEPARATOR, 0, separator1.c_str());
 
     // Add the "CleanUp Now" menu item
     wstring cleanup = L"CleanUp Now";
@@ -72,16 +81,17 @@ void openPopUp(HWND hwnd) {
     AppendMenu(hMenu, MF_STRING, ID_INFO, info.c_str());
 
     // Add a separator between the "Info" and "Exit" menu items
-    wstring separator = L"";
-    AppendMenu(hMenu, MF_SEPARATOR, 0, separator.c_str());
+    wstring separator2 = L"-------------";
+    AppendMenu(hMenu, MF_SEPARATOR, 0, separator2.c_str());
 
     // Add the "Exit" menu item
     wstring exit = L"Exit";
     AppendMenu(hMenu, MF_STRING, ID_EXIT, exit.c_str());
 
+    
+
     // Bring the window to the foreground to ensure the menu is displayed in front of other windows
     SetForegroundWindow(hwnd);
-
     // Get the current cursor position
     POINT pt;
     GetCursorPos(&pt);
@@ -250,11 +260,9 @@ void Autostart() {
 *@return The exit code of the program.
 */
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
-    // Call the Autostart function to check and set up the program's autostart feature
-    Autostart();
+    
 
-    // Call the CleanUp function to delete any temporary files 
-    CleanUp();
+    
 
     // Create the main window
     WNDCLASS wc = { 0 };
@@ -268,6 +276,12 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
     // Show the main window and enter the message loop
     ShowWindow(hwnd, SW_HIDE); // Hide the window
+
+    // Call the CleanUp function to delete any temporary files 
+    CleanUp();
+    // Call the Autostart function to check and set up the program's autostart feature
+    Autostart();
+
     MSG msg;
     while (GetMessage(&msg, NULL, 0, 0)) {
         TranslateMessage(&msg);

@@ -1,4 +1,0 @@
-﻿  AutoTempCleanUp.cpp
-D:\Projekts\AutoTempCleanUp\AutoTempCleanUp.cpp(64,57): warning C4302: "Typumwandlung": Verkürzung von "LPWSTR" in "WORD"
-D:\Projekts\AutoTempCleanUp\AutoTempCleanUp.cpp(199,118): warning C4267: "Argument": Konvertierung von "size_t" nach "DWORD", Datenverlust möglich
-  AutoTempCleanUp.vcxproj -> D:\Projekts\AutoTempCleanUp\x64\Debug\AutoTempCleanUp.exe
