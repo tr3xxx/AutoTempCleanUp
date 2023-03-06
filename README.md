@@ -21,6 +21,7 @@ The purpose of the program is to clean up temporary files on the computer automa
 
 1. Launch `AutoTempCleanUp.exe`
 2. Click the `Clean Now` button to delete temporary files immediately, or restart your Computer to let the programm delete all temporary files on boot.
+
 ![App Screenshot](https://gcdnb.pbrd.co/images/cymYBQF10c4A.png?o=1)
 
 ## Contributing
